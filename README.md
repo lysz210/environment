@@ -4,19 +4,19 @@ Simple wrapper around `process.env` to provide the environment variable in the r
 
 This package doesn't dictate how the environment variables are set, it's purpose is to simply get them - during runtime - in the right Type
   
-##**Available Methods**  
+## **Available Methods**  
 * asArray()  
 * asBoolean()  
 * asJson()  
 * asNumber()  
   
-##**Usage**
+## **Usage**
 
-####asArray()
+#### asArray()
 
-####asBoolean()
+#### asBoolean()
 
-####asJson()
+#### asJson()
 
-####asNumber()
+#### asNumber()
 If the value does not convert to a number, you will received a TypeError
