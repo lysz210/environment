@@ -25,7 +25,7 @@ Take the string `'one,two,three,four,five'` as our starting position, and let's 
   'five
 ]
 ```
-Since we used commas as the separator we didn't need to define it as the second paramater as it takes a commas as the default value. 
+Since we used commas as the separator we didn't need to define it as the second parameter as it takes a comma as the default value. 
 
 #### asBoolean(key)
 If the value is any of the below, you will receive `true`, otherwise `false` will be returned
