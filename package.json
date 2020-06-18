@@ -1,0 +1,30 @@
+{
+  "name": "@clouudsoftware/environment",
+  "version": "0.1.0",
+  "description": "Simple wrapper to get environment variables in the right format",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "alsatian './**/*.spec.ts' --tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clouudsoftware/environment.git"
+  },
+  "keywords": [
+    "process",
+    "env",
+    "environment",
+    "clouud",
+    "clouudsoftware"
+  ],
+  "author": "Michael Pirouet <michael@clouud.xyz>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "alsatian": "^3.2.1",
+    "typescript": "^3.9.5"
+  }
+}
