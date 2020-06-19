@@ -1,12 +1,13 @@
 {
   "name": "@clouudsoftware/environment",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Simple wrapper to get environment variables in the right format",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build": "rm -rf ./dist && tsc --project tsconfig.json && cp package.json README.md ./dist",
     "test": "alsatian './**/*.spec.ts' --tap"
   },
   "repository": {

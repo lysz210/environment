@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [
@@ -19,7 +21,7 @@
     "sourceMap": true
   },
   "include": [
-    "src"
+    "./src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
