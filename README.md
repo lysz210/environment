@@ -5,10 +5,11 @@ Simple wrapper around `process.env` to provide the environment variable in the r
 This package doesn't dictate how environment variables become defined, it's purpose is to simply get them - during runtime - in the right Type
   
 ## **Available Methods**  
-* asArray()  
-* asBoolean()  
-* asJson()  
-* asNumber()  
+* asArray(key: string, separator: string = ',')  
+* asBoolean(key: string)  
+* asJson(key: string)  
+* asNumber(key: string)  
+* env(key: string)
   
 ## **Usage**
 
@@ -41,3 +42,6 @@ If the value does not convert to a JSON object, you will receive a TypeError
 
 #### asNumber(key)
 If the value does not convert to a number, you will receive a TypeError
+
+#### env(key)
+This is the underlying method to get the `proces.env`. Calling this method will return the raw environment variable in String format
