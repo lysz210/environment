@@ -22,7 +22,7 @@
     "clouudsoftware"
   ],
   "author": "Michael Pirouet <michael@clouud.xyz>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^14.0.13",
     "alsatian": "^3.2.1",
