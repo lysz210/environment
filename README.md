@@ -1,3 +1,5 @@
+![Node.js Package](https://github.com/clouudsoftware/environment/workflows/Node.js%20Package/badge.svg)
+
 # @clouudsoftware/environment  
   
 Simple wrapper around `process.env` to provide the environment variable in the right Type depending on the method called.
