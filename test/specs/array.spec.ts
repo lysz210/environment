@@ -1,6 +1,6 @@
 import {Expect, Test, TestFixture} from "alsatian";
-import {asArray} from "../../src/lib/array";
-
+import {asArray} from "../../src/index";
+import { UndefinedEnvError } from "../../src/lib/exceptions";
 
 @TestFixture('Array Checks')
 export class ArraySpec {
@@ -26,10 +26,9 @@ export class ArraySpec {
         Expect(numberArray).toEqual(['one', 'two', 'three', 'four', 'five']);
     }
 
-    @Test(`Shouldn't fail when no environment variable exists`)
+    @Test(`Should Throw UndefinedEnvError when no environment variable exists`)
     testUndefinedVariable() {
-        const nonExistant = asArray('nonExistantKey');
-        Expect(nonExistant).not.toBeDefined();
+        Expect(() => asArray('nonExistantKey')).not.toThrowError(UndefinedEnvError, "UndefinedEnvError not thrown!")
     }
 
 }

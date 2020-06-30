@@ -1,5 +1,5 @@
 import {Expect, Test, TestFixture} from "alsatian";
-import {asBoolean} from "../../dist";
+import {asBoolean} from "../../src/index";
 
 @TestFixture('Boolean Checks')
 export class BooleanSpec {
